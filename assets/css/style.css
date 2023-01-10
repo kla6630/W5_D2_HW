@@ -32,7 +32,7 @@ header {
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -412,38 +412,56 @@ footer a {
   }
 }
 
-.buttons-fixed {
+/* impostazioni per i bottoni laterali*/
+.fixed {
+  display: inline-block;
+  background-color: rgba(194, 194, 194, 0.783);
+  border-radius: 8px;
+  border: 2px solid white;
+  padding: 1rem;
+  padding-bottom: 0.6rem;
   position: fixed;
-  top: 45%;
-  left: 94%;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+  right: -15px;
+  z-index: 3;
 }
 
-.buttons-fixed {
-  position: fixed;
-  top: 45%;
-  left: 94%;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+.calendar {
+  color: #3063bf;
 }
 
-.button {
-  width: 50px;
-  height: 50px;
-  margin: 20px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  display: block;
-  background-color: rgba(104, 102, 102, 0.09);
-  margin-right: 5px;
-  color: #3f6bca;
+.plus {
+  color: #3063bf;
 }
 
-.button_2 {
-  color: #ca3f3f;
+.social_calendar {
+  display: flexbox;
+  position: sticky;
+  top: 20px;
+  bottom: 20px;
+}
+
+@media screen and (min-width: 501px) {
+  .plus {
+    top: 0.5rem;
+  }
+  .calendar {
+    top: 117px;
+  }
+  .goTop {
+    bottom: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .plus {
+    top: 0.5rem;
+  }
+  .calendar {
+    top: 100px;
+  }
+  .goTop {
+    bottom: 0;
+    margin-bottom: 1rem;
+  }
 }
