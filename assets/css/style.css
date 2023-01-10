@@ -126,6 +126,16 @@ section h2 {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+#underline_svg {
+  position: relative;
+}
+#underline_svg img {
+  position: absolute;
+  right: -6px;
+  width: 100%;
+  top: 75px;
+}
+
 h1 {
   font-size: 2.6rem;
   line-height: 1.2;
@@ -404,11 +414,20 @@ footer a {
 
 .buttons-fixed {
   position: fixed;
-  left:94%;
+  top: 45%;
+  left: 94%;
   bottom: 0;
   width: 100%;
   text-align: center;
-  
+}
+
+.buttons-fixed {
+  position: fixed;
+  top: 45%;
+  left: 94%;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .button {
@@ -418,13 +437,13 @@ footer a {
   border-radius: 10px;
   border-style: solid;
   border-color: white;
-  border-width:2px;
+  border-width: 2px;
   display: block;
   background-color: rgba(104, 102, 102, 0.09);
   margin-right: 5px;
-  color:#3f6bca;
-  }
+  color: #3f6bca;
+}
 
-  .button_2{
-    color:#ca3f3f;
-  }
+.button_2 {
+  color: #ca3f3f;
+}
